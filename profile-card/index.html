@@ -13,7 +13,7 @@
     />
     <link rel="stylesheet" href="css/style.css" />
 
-    <!-- Tailwind CDN allows you to use Tailwind classes immediately in your HTML without any installation steps. 
+    <!-- Tailwind CDN allows you to use Tailwind classes immediately in your HTML without any installation steps.
       If you're not using Tailwind, you may delete the <script> -->
     <!-- Get started on Tailwind: https://tailwindcss.com/docs/installation/play-cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -42,9 +42,9 @@
     >
       <header class="flex flex-col items-center mb-6">
         <img src="/img/profile.png" alt="Ayush Sanj" class="mb-6 w-16 h-16" />
-        <p class="font-medium text-xl text-center text-neutral-900 mb-1">
+        <h2 class="font-medium text-xl text-center text-neutral-900 mb-1">
           Ayush Sanj
-        </p>
+        </h2>
         <p class="font-normal text-sm text-center text-neutral-600">
           Front End Engineer @ Hoolixyz
         </p>
@@ -53,11 +53,14 @@
         I turn coffee into bugs which are fixed by someone else. Certified Stack
         Overflow and ChatGPT developer.
       </p>
-      <button
-        class="bg-indigo-700 px-4 py-2.5 rounded text-white text-base font-medium w-full mb-6"
+      <a
+        class="inline-block w-full text-center bg-indigo-700 px-4 py-2.5 rounded text-white text-base font-medium mb-6 hover:bg-indigo-600"
+        href="mailto:ayushsanjpro@gmail.com"
+        role="button"
+        aria-label="Contact me"
       >
         Contact me
-      </button>
+      </a>
       <footer
         class="flex gap-8 justify-center cursor-pointer self-stretch"
       ></footer>
@@ -68,6 +71,7 @@
       <a
         href="https://www.greatfrontend.com/projects?ref=challenges"
         target="_blank"
+        rel="noopener noreferrer"
         >GreatFrontEnd Projects</a
       >. Built by
       <a
