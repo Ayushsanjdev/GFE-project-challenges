@@ -40,11 +40,17 @@ linksSVG.forEach(({ svg, link, name }) => {
   iconElement.setAttribute("aria-label", `${name} (opens in new tab)`);
   iconElement.classList.add(
     "inline-flex",
+    "items-center",
+    "justify-center",
+    "p-1.5",
+    "rounded-sm",
+    "hover:bg-indigo-200",
+    "hover:rounded-full",
+    "transition-colors",
     "focus-visible:outline",
     "focus-visible:outline-2",
     "focus-visible:outline-offset-2",
     "focus-visible:outline-indigo-700",
-    "rounded-sm",
   );
   iconElement.innerHTML = svg;
   fragment.appendChild(iconElement);
