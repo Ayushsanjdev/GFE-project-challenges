@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GreatFrontEnd Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Tailwind CDN allows you to use Tailwind classes immediately in your HTML without any installation steps. 
+      If you're not using Tailwind, you may delete the <script> -->
+    <!-- Get started on Tailwind: https://tailwindcss.com/docs/installation/play-cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="icon" href="img/favicon.ico" sizes="any" />
+    <style>
+      /* Visible keyboard focus — critical for accessibility, never remove this */
+      a:focus-visible,
+      button:focus-visible {
+        outline: 3px solid #4f46e5;
+        outline-offset: 3px;
+        border-radius: 4px;
+      }
+
+      /* Respect users who've asked for reduced motion */
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          transition: none !important;
+        }
+      }
+    </style>
+  </head>
+  <body
+    class="w-full h-screen flex flex-col items-center justify-center bg-gradient-to-b from-gray-50 to-[#d2d6db]"
+  >
+    <article
+      class="relative max-w-[340px] bg-white rounded-lg shadow-[0px_1px_2px_0_rgb(0_0_0_/_0.06),0px_1px_3px_0_rgb(0_0_0_/_0.10)] overflow-hidden"
+    >
+      <picture>
+        <source
+          type="image/webp"
+          srcset="
+            img/living-room-400.webp 400vw,
+            img/living-room-800.webp 800vw
+          "
+          sizes="(max-width: 400px) 100vw, 400px"
+        />
+        <img
+          src="img/living-room-800.jpeg"
+          srcset="
+            img/living-room-400.webp 400vw,
+            img/living-room-800.webp 800vw
+          "
+          sizes="(max-width: 400px) 100vw, 400px"
+          width="400"
+          height="224"
+          alt="Cozy living room with woven rattan pendant lights, a grey sofa, layered rugs, and potted plants"
+          class="w-full max-h-[288px] object-cover self-stretch"
+          loading="lazy"
+          decoding="async"
+        />
+      </picture>
+
+      <div class="px-4 py-6">
+        <p
+          class="inline-block text-sm text-center font-medium text-green-700 bg-green-50 border border-green-200 rounded-full px-3 py-1 mb-2 max-w-fit"
+        >
+          Interior
+        </p>
+        <h3 class="font-semibold text-lg text-neutral-900 mb-3">
+          <a href="" class="hover:underline">
+            <span class="after:absolute after:inset-0 after:content-['']">
+              Top 5 Living Room Inspirations
+            </span>
+          </a>
+        </h3>
+        <p class="font-medium text-base text-neutral-600 mb-6">
+          Curated vibrants colors for your living, make it pop & calm in the
+          same time
+        </p>
+        <span
+          class="relative z-10 font-medium text-base text-indigo-700 inline-flex items-center gap-1.5 text-indigo-600 pointer-events-none"
+        >
+          Read more
+          <svg
+            width="12"
+            height="12"
+            viewBox="0 0 14 13"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <path
+              d="M10.143 5.64852L5.673 1.17851L6.8515 0L13.3333 6.48185L6.8515 12.9636L5.673 11.7851L10.143 7.31518H0V5.64852H10.143Z"
+              fill="#4338CA"
+            />
+          </svg>
+        </span>
+      </div>
+    </article>
+
+    <div class="credits" data-gfe-screenshot-exclude="true">
+      A challenge by
+      <a
+        href="https://www.greatfrontend.com/projects?ref=challenges"
+        target="_blank"
+        >GreatFrontEnd Projects</a
+      >. Built by
+      <a
+        href="https://www.greatfrontend.com/projects/u/ayushsanj"
+        target="_blank"
+        >Ayush Sanj</a
+      >.
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
