@@ -20,27 +20,34 @@
 
     <link rel="icon" href="img/favicon.ico" sizes="any" />
     <style>
-      /* You may write styles inside this <style> tag or within `css/style.css`. */
+      a:focus-visible,
+      button:focus-visible {
+        outline: 3px solid #4f46e5;
+        outline-offset: 3px;
+        border-radius: 4px;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          animation: none;
+        }
+      }
     </style>
   </head>
   <body
     class="flex flex-col items-center justify-center bg-gradient-to-b from-gray-50 to-[#d2d6db]"
   >
     <article
-      class="bg-white shadow-[0px 1px 2px 0 rgb(0 0 0 / 0.06), 0px 1px 3px 0 rgb(0 0 0 / 0.10)] max-w-xs px-4 py-6 rounded-lg"
+      class="bg-white shadow-[0px_1px_2px_0_rgb(0_0_0_/_0.06),0px_1px_3px_0_rgb(0_0_0_/_0.10)] max-w-xs px-4 py-6 rounded-lg"
     >
       <header class="flex flex-col items-center mb-6">
-        <img
-          src="/img/profile.png"
-          alt="This is how Sarah Dole looks"
-          class="mb-6 w-16 h-16"
-        />
-        <h3 class="font-medium text-xl text-center text-neutral-900 mb-1">
-          Sarah Dole
-        </h3>
-        <h6 class="font-normal text-sm text-center text-neutral-600">
-          Front End Engineer @ Microsoft
-        </h6>
+        <img src="/img/profile.png" alt="Ayush Sanj" class="mb-6 w-16 h-16" />
+        <p class="font-medium text-xl text-center text-neutral-900 mb-1">
+          Ayush Sanj
+        </p>
+        <p class="font-normal text-sm text-center text-neutral-600">
+          Front End Engineer @ Hoolixyz
+        </p>
       </header>
       <p class="mb-10 font-normal text-base text-center text-neutral-600">
         I turn coffee into bugs which are fixed by someone else. Certified Stack
@@ -51,7 +58,9 @@
       >
         Contact me
       </button>
-      <footer class="flex gap-4 justify-center cursor-pointer"></footer>
+      <footer
+        class="flex gap-8 justify-center cursor-pointer self-stretch"
+      ></footer>
     </article>
 
     <div class="credits" data-gfe-screenshot-exclude="true">
