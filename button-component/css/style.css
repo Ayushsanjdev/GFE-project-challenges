@@ -43,7 +43,7 @@ body {
 
 /* Mobile first */
 
-.container {
+.btn-container {
   display: flex;
   flex-direction: column;
   padding: 112px 24px;
@@ -199,14 +199,13 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  /* tablet & desktop */
-  .container {
+  .btn-container {
+    max-width: 768px;
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
     padding: 112px 32px;
     margin: 0 auto;
-    max-width: 768px;
   }
   .btn {
     width: auto;
