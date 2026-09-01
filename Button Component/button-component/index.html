@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <!-- [Delete this comment] This file is the main file for the challenge. For the most part, you should be editing this file. -->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hero Section | GreatFrontEnd Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Tailwind CDN allows you to use Tailwind classes immediately in your HTML without any installation steps. 
+      If you're not using Tailwind, you may delete the <script> -->
+    <!-- Get started on Tailwind: https://tailwindcss.com/docs/installation/play-cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="icon" href="img/favicon.ico" sizes="any" />
+    <style>
+      /* You may write styles inside this <style> tag or within `css/style.css`. */
+    </style>
+  </head>
+  <body>
+    <svg style="display: none">
+      <symbol id="icon-star" viewBox="0 0 20 20">
+        <path
+          d="M10.0005 15.2166L4.12261 18.5068L5.43539 11.8999L0.489899 7.32646L7.1791 6.53334L10.0005 0.416626L12.8218 6.53334L19.511 7.32646L14.5656 11.8999L15.8783 18.5068L10.0005 15.2166ZM10.0005 13.3066L13.5394 15.2875L12.749 11.3097L15.7266 8.55613L11.6992 8.07858L10.0005 4.39581L8.30177 8.07858L4.27433 8.55613L7.25191 11.3097L6.46151 15.2875L10.0005 13.3066Z"
+        />
+      </symbol>
+    </svg>
+    <main class="container">
+      <!-- primary variant -->
+      <section class="btn-size-icon-combo">
+        <button class="btn btn--primary btn--md">Button CTA</button>
+        <button class="btn btn--primary btn--lg btn--icon-left">
+          <svg class="btn__icon"><use href="#icon-star"></use></svg>
+          <span class="btn__label">Button CTA</span>
+        </button>
+        <button class="btn btn--primary btn--xl btn--icon-right">
+          <span class="btn__label">Button CTA</span>
+          <svg class="btn__icon"><use href="#icon-star"></use></svg>
+        </button>
+        <button class="btn btn--primary btn--2xl btn--icon-both">
+          <span class="btn__label">Button CTA</span>
+        </button>
+        <button
+          class="btn btn--primary btn--md btn--icon-only"
+          aria-label="Button CTA"
+        >
+          <svg class="btn__icon"><use href="#icon-star"></use></svg>
+        </button>
+      </section>
+      <!-- secondary variant -->
+      <section class="btn-size-icon-combo">
+        <button class="btn btn--secondary btn--md">Button CTA</button>
+        <button class="btn btn--secondary btn--lg btn--icon-left">
+          <svg class="btn__icon"><use href="#icon-star"></use></svg>
+          <span class="btn__label">Button CTA</span>
+        </button>
+        <button class="btn btn--secondary btn--xl btn--icon-right">
+          <span class="btn__label">Button CTA</span>
+          <svg class="btn__icon"><use href="#icon-star"></use></svg>
+        </button>
+        <button class="btn btn--secondary btn--2xl btn--icon-both">
+          <span class="btn__label">Button CTA</span>
+        </button>
+        <button
+          class="btn btn--secondary btn--md btn--icon-only"
+          aria-label="Button CTA"
+        >
+          <svg class="btn__icon"><use href="#icon-star"></use></svg>
+        </button>
+      </section>
+      <!-- tertiary variant -->
+      <section class="btn-size-icon-combo">
+        <button class="btn btn--tertiary btn--md">Button CTA</button>
+        <button class="btn btn--tertiary btn--lg btn--icon-left">
+          <svg class="btn__icon"><use href="#icon-star"></use></svg>
+          <span class="btn__label">Button CTA</span>
+        </button>
+        <button class="btn btn--tertiary btn--xl btn--icon-right">
+          <span class="btn__label">Button CTA</span>
+          <svg class="btn__icon"><use href="#icon-star"></use></svg>
+        </button>
+        <button class="btn btn--tertiary btn--2xl btn--icon-both">
+          <span class="btn__label">Button CTA</span>
+        </button>
+        <button
+          class="btn btn--tertiary btn--md btn--icon-only"
+          aria-label="Button CTA"
+        >
+          <svg class="btn__icon"><use href="#icon-star"></use></svg>
+        </button>
+      </section>
+      <!-- links#1 variant -->
+      <section class="btn-size-icon-combo">
+        <button class="btn btn--links-primary btn--md">Button CTA</button>
+        <button class="btn btn--links-primary btn--lg btn--icon-left">
+          <svg class="btn__icon"><use href="#icon-star"></use></svg>
+          <span class="btn__label">Button CTA</span>
+        </button>
+        <button class="btn btn--links-primary btn--xl btn--icon-right">
+          <span class="btn__label">Button CTA</span>
+          <svg class="btn__icon"><use href="#icon-star"></use></svg>
+        </button>
+        <button class="btn btn--links-primary btn--2xl btn--icon-both">
+          <span class="btn__label">Button CTA</span>
+        </button>
+        <button
+          class="btn btn--links-primary btn--md btn--icon-only"
+          aria-label="Button CTA"
+        >
+          <svg class="btn__icon"><use href="#icon-star"></use></svg>
+        </button>
+      </section>
+      <!-- links#2 variant -->
+      <section class="btn-size-icon-combo">
+        <button class="btn btn--links-secondary btn--md">Button CTA</button>
+        <button class="btn btn--links-secondary btn--lg btn--icon-left">
+          <svg class="btn__icon"><use href="#icon-star"></use></svg>
+          <span class="btn__label">Button CTA</span>
+        </button>
+        <button class="btn btn--links-secondary btn--xl btn--icon-right">
+          <span class="btn__label">Button CTA</span>
+          <svg class="btn__icon"><use href="#icon-star"></use></svg>
+        </button>
+        <button class="btn btn--links-secondary btn--2xl btn--icon-both">
+          <span class="btn__label">Button CTA</span>
+        </button>
+        <button
+          class="btn btn--links-secondary btn--md btn--icon-only"
+          aria-label="Button CTA"
+        >
+          <svg class="btn__icon"><use href="#icon-star"></use></svg>
+        </button>
+      </section>
+      <!-- destructive variant -->
+      <section class="btn-size-icon-combo">
+        <button class="btn btn--destructive btn--md">Button CTA</button>
+        <button class="btn btn--destructive btn--lg btn--icon-left">
+          <svg class="btn__icon"><use href="#icon-star"></use></svg>
+          <span class="btn__label">Button CTA</span>
+        </button>
+        <button class="btn btn--destructive btn--xl btn--icon-right">
+          <span class="btn__label">Button CTA</span>
+          <svg class="btn__icon"><use href="#icon-star"></use></svg>
+        </button>
+        <button class="btn btn--destructive btn--2xl btn--icon-both">
+          <span class="btn__label">Button CTA</span>
+        </button>
+        <button
+          class="btn btn--destructive btn--md btn--icon-only"
+          aria-label="Button CTA"
+        >
+          <svg class="btn__icon"><use href="#icon-star"></use></svg>
+        </button>
+      </section>
+    </main>
+
+    <!-- Attribute this challenge to yourself! -->
+    <div class="credits">
+      A challenge by
+      <a
+        href="https://www.greatfrontend.com/projects?ref=challenges"
+        target="_blank"
+        >GreatFrontEnd Projects</a
+      >. Built by
+      <a href="https://www.greatfrontend.com/u/ayushsanj" target="_blank"
+        >Ayush Sanj</a
+      >.
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
